@@ -4,8 +4,11 @@ import { createObservableProxy } from './utils/ObservableProxy.js'
 
 class ObservableAppState extends EventEmitter {
 
-  /** @type {Car[]} */
-  cars = []
+  // /** @type {Car[]} */
+  // cars = []
+
+  /** @type {Job[]} */
+  jobs = []
 
   user = null
   /**@type {import('./models/Account.js').Account | null} */
