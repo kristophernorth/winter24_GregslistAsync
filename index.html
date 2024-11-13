@@ -56,58 +56,44 @@
 
 
     <!-- STUB Cars Form -->
-    <form id="create-car-form" onsubmit="app.CarsController.postCar()"
-      class="d-none row bg-white rounded p-3 shadow-sm my-3 g-3">
+    <form id="create-job-form" onsubmit="app.JobsController.postJob()"
+      class="row bg-white rounded p-3 shadow-sm my-3 g-3">
       <div>
-        <h2>List Your Car</h2>
+        <h2>List Your Job</h2>
       </div>
       <div class="col-md-4">
-        <label for="car-make">Make</label>
-        <input required id="car-make" name="make" type="text" minlength="2" maxlength="25" class="form-control">
+        <label for="company-name">Company</label>
+        <input required id="company-name" name="company" type="text" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-model">Model</label>
-        <input required id="car-model" name="model" type="text" minlength="1" , maxlength="25" class="form-control">
+        <label for="job-title">Job Title</label>
+        <input required id="job-title" name="title" type="text" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-year">Year</label>
-        <input required id="car-year" name="year" type="number" min="1885" max="2025" class="form-control">
+        <label for="weekly-hours">Hours</label>
+        <input required id="weekly-hours" name="hours" type="text" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-price">Price</label>
-        <input required id="car-price" name="price" type="number" min="1" max="10000000000" class="form-control">
-      </div>
-      <div class="col-md-6">
-        <label for="car-imgUrl">Picture</label>
-        <input required id="car-imgUrl" name="imgUrl" type="url" class="form-control">
+        <label for="hourly-rate">Rate</label>
+        <input required id="hourly-rate" name="rate" type="text" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-color">Color</label>
-        <input required id="car-color" name="color" type="color" class="form-control">
+        <label for="job-description">Description</label>
+        <input required id="job-description" name="description" type="text" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-engineType">Engine</label>
-        <select name="engineType" id="car-engineType" required class="form-control">
-          <option value="2 stroke">2 stroke</option>
-          <option value="4 cylinder">4 cylinder</option>
-          <option value="v6">v6</option>
-          <option value="v8">v8</option>
-          <option value="v10">v10</option>
-          <option value="v12">v12</option>
-          <option value="small">small</option>
-          <option value="medium">medium</option>
-          <option value="large">large</option>
-          <option value="chuncko">chuncko</option>
-        </select>
+        <label for="creator-name">Creator name</label>
+        <input required id="creator-name" name="profile-name" type="text" class="form-control">
       </div>
-      <div class="col-12">
-        <label for="car-description">Description</label>
-        <textarea name="description" id="car-description" class="form-control" rows="3"></textarea>
+      <div class="col-md-4">
+        <label for="creator-image">Creator image</label>
+        <input required id="creator-image" name="profile-emoji" type="text" class="form-control">
       </div>
       <div class="text-end mt-3">
-        <button class="btn btn-primary px-4">Submit <i class="mdi mdi-plust"></i></button>
+        <button class="btn btn-primary px-4">Submit</button>
       </div>
     </form>
+    <hr>
     <!-- STUB Cars listings -->
     <h1>Wanna find a job?</h1>
     <hr>

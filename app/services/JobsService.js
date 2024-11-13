@@ -12,8 +12,10 @@ class JobsService {
     AppState.jobs = jobs
   }
 
-  async postJob() {
-
+  async postJob(formData) {
+    const response = await api.post('api/jobs', formData)
+    const createdJob = new Job(response.data)
+    AppState.jobs.unshift(createdJob)
   }
 
 }

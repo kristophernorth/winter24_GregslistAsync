@@ -27,9 +27,9 @@ export class Job {
         <p>${this.imgUrl}</p>
         <div class="d-flex justify-content-between">
           <p>${this.creator.name}</p>
-          <img src="${this.creator.picture} " alt="" class="profile - picture - sm">
-        </div >
-      </div >
+          <img src="${this.creator.picture} " alt="" class="profile-picture-sm">
+        </div>
+      </div>
       `
   }
 
