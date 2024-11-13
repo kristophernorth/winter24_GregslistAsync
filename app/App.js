@@ -8,7 +8,7 @@ class App {
 
   AuthController = new AuthController()
 
-  CarsController = new CarsController()
+  // CarsController = new CarsController()
 
   JobsController = new JobsController()
 
